@@ -44,6 +44,66 @@
 			box-shadow: 0 4px 8px #0073b1;
 			z-index: 3;
 		}
+    
+:root {
+    --deep-teal: #003d4d;
+    --off-white: #f8f9fa;
+    --dark-slate: #2f4f4f;
+    --soft-gold: #d9c79e;
+}
+.footer {
+    width: 100%; 
+    background-color: var(--deep-teal); 
+    color: white;
+    padding: 13px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.ul{
+   padding: 0;
+   list-style: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+}
+.footer-bottom{
+    text-align: center;
+    color: #fff; 
+    font-size: 14px;
+    margin: 0;
+    margin-bottom:10px;
+}
+
+.footer a {
+    color: var(--soft-gold);
+    text-decoration: none;
+    font-size: 16px;  
+}
+
+ .social-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px
+ }
+ .social-icons a:hover{
+    color: var(--light-grey);
+    transform: scale(1.2) translateY(-5px);
+ }
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-section h3{
+    margin-bottom: 14px;
+    font-size: 28px;
+}
 
   <head>
     <meta charset="UTF-8" />
@@ -88,6 +148,65 @@
 
 		/* <label for ="dark-mode-toggle" style="margin: 20px; display: block; text-align: center;"><label for="dark-mode-toggle"><input type="checkbox" id="dark-mode-toggle" />Toggle Dark Mode </label></label> */
 
+    :root {
+    --deep-teal: #003d4d;
+    --off-white: #f8f9fa;
+    --dark-slate: #2f4f4f;
+    --soft-gold: #d9c79e;
+}
+.footer {
+    width: 100%; 
+    background-color: var(--deep-teal); 
+    color: white;
+    padding: 13px 0;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.ul{
+   padding: 0;
+   list-style: none;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+}
+.footer-bottom{
+    text-align: center;
+    color: #fff; 
+    font-size: 14px;
+    margin: 0;
+    margin-bottom:10px;
+}
+
+.footer a {
+    color: var(--soft-gold);
+    text-decoration: none;
+    font-size: 16px;  
+}
+
+ .social-icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px
+ }
+ .social-icons a:hover{
+    color: var(--light-grey);
+    transform: scale(1.2) translateY(-5px);
+ }
+
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-section h3{
+    margin-bottom: 14px;
+    font-size: 28px;
+}
       .features-card {
         background-color: white;
         padding: 30px;
@@ -263,37 +382,8 @@
 			/* Italic style for testimonial text */
 		}
 
-		/* Footer Styles */
-		.footer {
-			background-color: var(--deep-teal);
-			/* Use deep teal for footer background */
-			color: #ffffff;
-			/* White text for footer */
-			padding: 40px 0;
-			padding-bottom:0;
-		}
-
-		.footer-content {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			max-width: 1200px;
-			/* Max width for footer content */
-			margin: 0 auto;
-			/* Center footer content */
-			padding: 0 20px;
-		}
-
-		.footer-section {
-			flex: 1;
-			/* Flexible sections in footer */
-			margin-bottom: 20px;
-			/* Space between footer sections */
-			min-width: 200px;
-			/* Minimum width for each section */
-		}
-
-
+		
+		
 		.text {
 			padding-right: 20px;
 			/* Right padding for text sections */
@@ -305,7 +395,7 @@
 			color: #aca7eb;
 			margin: 10px 0;
 			font-size: 20px;
-		}
+		} */
 
 
 
@@ -679,6 +769,7 @@
 
 
     <!-- Scripts -->
+     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -803,7 +894,54 @@
       <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- footer-section -->
+    <!-- footer-section
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <ul class="ul">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul class="ul">
+            <li><a href="#">Resume Builder</a></li>
+            <li><a href="#">CV Templates</a></li>
+            <li><a href="#">Career Advice</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Support</h3>
+          <ul class="ul">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Resume Builder. All rights reserved.</p>
+      </div>
+    </footer> -->
+
+
+        
+        <!-- header section ends -->
+    
+    
+        <!-- footer section -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
@@ -844,405 +982,3 @@
         <p>&copy; 2024 Resume Builder. All rights reserved.</p>
       </div>
     </footer>
-
-
-        
-        <!-- header section ends -->
-    
-    
-        <!-- home section starts -->
-    
-        <section class="home" id="Home">
-    
-            <div class="content">
-                <h3>Build Your Resume in Seconds from LinkedIn</h3>
-                <p>Easily generate a professional resume using your LinkedIn profile. Select a template, enter your LinkedIn URL,
-                    and get a downloadable resume in a few clicks. Save time and create a resume that stands out. </p>
-                <a href="login.html" class="btn">Get Started</a>
-            </div>
-    
-        </section>
-    
-        <!-- home section ends-->
-
-    <!-- Features Section -->
-    <section class="features">
-        <h2>Our Features</h2>
-        <div class="features-cards">
-            <div class="features-card">
-                <img src="assets/joao-ferrao-4YzrcDNcRVg-unsplash.jpg" alt="Easy to Use" >
-                <h3>Easy to Use</h3>
-                <p>Create a professional resume effortlessly with our user-friendly interface.</p>
-            </div>
-            <div class="features-card">
-                <img src="assets/instant resume.jpg" alt="Instant Resume">
-                <h3>Instant Resume</h3>
-                <p>Generate a polished resume in seconds using your LinkedIn profile data.</p>
-            </div>
-            <div class="features-card">
-                <img src="assets/securedata.jpg" alt="Secure Data">
-                <h3>Secure Data</h3>
-                <p>Your personal information is safe with our secure and encrypted platform.</p>
-            </div>
-            <div class="features-card">
-                <img src="assets/support.jpg" alt="24/7 Support">
-                <h3>24/7 Support</h3>
-                <p>Our dedicated support team is available round the clock to assist you.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Users Say</h2>
-        <div class="testimonial-cards">
-            <div class="testimonial-card">
-                <img src="assets/jondoe.jpg" alt="User 1">
-                <h3>Jane Doe</h3>
-                <p>"This resume builder transformed my LinkedIn profile into a professional resume effortlessly. Highly recommended!"</p>
-            </div>
-            <div class="testimonial-card">
-                <img src="assets/john_smith.jpg" alt="User 2">
-                <h3>John Smith</h3>
-                <p>"I was amazed at how quickly I was able to generate a resume. The process was smooth and the result was perfect."</p>
-            </div>
-            <div class="testimonial-card">
-                <img src="assets/emily_johnson.jpg" alt="User 3">
-                <h3>Emily Johnson</h3>
-                <p>"The platform is user-friendly and secure. I felt confident that my data was protected. Great service!"</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Resume Builder</a></li>
-                    <li><a href="#">CV Templates</a></li>
-                    <li><a href="#">Career Advice</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/GarimaSingh0109/Resum-Resume" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Resume Builder. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>// Wait for the DOM to be fully loaded
-        document.addEventListener("DOMContentLoaded", function () {
-            // Select all sections you want to animate
-            const sections = document.querySelectorAll("section, header, footer");
-        
-            // Animate each section with a fade-in effect and additional properties
-            sections.forEach((section) => {
-                gsap.set(section, { opacity: 0, scale: 0.9 }); // Initial state
-                gsap.to(section, {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 1,
-                    delay: 0.5,
-                    stagger: 0.3,
-                    ease: "back.out(1.7)" // Use a bounce effect for the animation
-                });
-            });
-        
-            // Animate the navbar items
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach((tab, index) => {
-                gsap.set(tab, { opacity: 0, y: -20, scale: 0.9 }); // Initial state
-                gsap.to(tab, {
-                    opacity: 1,
-                    y: 0,
-                    scale: 1,
-                    duration: 0.5,
-                    delay: 1 + index * 0.2,
-                    ease: "back.out(1.7)" // Bounce effect
-                });
-            });
-        
-            // Add animations for icons
-            const icons = document.querySelectorAll('.icons a');
-            icons.forEach((icon, index) => {
-                gsap.set(icon, { opacity: 0, y: -20, rotation: -15 }); // Initial state
-                gsap.to(icon, {
-                    opacity: 1,
-                    y: 0,
-                    rotation: 0,
-                    duration: 0.5,
-                    delay: 1 + index * 0.3,
-                    ease: "back.out(1.7)" // Bounce effect
-                });
-            });
-        
-            // Animate the home section content
-            const homeContent = document.querySelector('.home .content');
-            gsap.set(homeContent, { opacity: 0, y: 30 }); // Initial state
-            gsap.to(homeContent, {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                delay: 1.5,
-                ease: "power2.out" // Smooth easing
-            });
-        
-            // Animate the features cards
-            const featuresCards = document.querySelectorAll('.features-card');
-            featuresCards.forEach((card, index) => {
-                gsap.set(card, { opacity: 0, y: 20 }); // Initial state
-                gsap.to(card, {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.5,
-                    delay: 1.5 + index * 0.2,
-                    ease: "power2.out" // Smooth easing
-                });
-            });
-        
-            // Animate testimonials section
-            const testimonialCards = document.querySelectorAll('.testimonial-card');
-            testimonialCards.forEach((card, index) => {
-                gsap.set(card, { opacity: 0, scale: 0.9 }); // Initial state
-                gsap.to(card, {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 0.5,
-                    delay: 2 + index * 0.3,
-                    ease: "back.out(1.7)" // Bounce effect
-                });
-            });
-        });
-        </script>
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-
-
-	<!-- header section begins -->
-
-		
-
-		<div class="icons">
-			<a href="about.html" class="fas fa-info-circle"></a>
-			<a href="#" class="fas fa-envelope"></a>
-			<a href="login.html" id="loginIcon" class="fas fa-user"></a>
-		</div>
-	</header>
-
-	<!-- header section ends -->
-
-	<!-- home section starts -->
-
-	<section class="home" id="Home">
-		<div class="content">
-			<h3>Build Your Resume in Seconds from LinkedIn</h3>
-			<p>
-				Easily generate a professional resume using your LinkedIn
-				profile. Select a template, enter your LinkedIn URL, and get
-				a downloadable resume in a few clicks. Save time and create
-				a resume that stands out.
-			</p>
-			<a href="login.html" class="btn">Get Started</a>
-		</div>
-	</section>
-
-	<!-- home section ends-->
-
-	<!-- Features Section -->
-	<section class="features">
-		<h2>Our Features</h2>
-		<div class="features-cards">
-			<div class="features-card">
-				<img src="assets/joao-ferrao-4YzrcDNcRVg-unsplash.jpg" alt="Easy to Use" />
-				<h3>Easy to Use</h3>
-				<p>
-					Create a professional resume effortlessly with our
-					user-friendly interface.
-				</p>
-			</div>
-			<div class="features-card">
-				<img src="assets/instant resume.jpg" alt="Instant Resume" />
-				<h3>Instant Resume</h3>
-				<p>
-					Generate a polished resume in seconds using your
-					LinkedIn profile data.
-				</p>
-			</div>
-			<div class="features-card">
-				<img src="assets/securedata.jpg" alt="Secure Data" />
-				<h3>Secure Data</h3>
-				<p>
-					Your personal information is safe with our secure and
-					encrypted platform.
-				</p>
-			</div>
-			<div class="features-card">
-				<img src="assets/support.jpg" alt="24/7 Support" />
-				<h3>24/7 Support</h3>
-				<p>
-					Our dedicated support team is available round the clock
-					to assist you.
-				</p>
-			</div>
-		</div>
-	</section>
-
-	<!-- Testimonials Section -->
-	<section class="testimonials">
-		<h2>What Our Users Say</h2>
-
-		<div class="testimonial-cards">
-			<div class="testimonial-card">
-				<img src="assets/jondoe.jpg" alt="User 1" />
-				<h3>Jane Doe</h3>
-				<p>
-					"This resume builder transformed my LinkedIn profile
-					into a professional resume effortlessly. Highly
-					recommended!"
-				</p>
-			</div>
-			<div class="testimonial-card">
-				<img src="assets/john_smith.jpg" alt="User 2" />
-				<h3>John Smith</h3>
-				<p>
-					"I was amazed at how quickly I was able to generate a
-					resume. The process was smooth and the result was
-					perfect."
-				</p>
-			</div>
-			<div class="testimonial-card">
-				<img src="assets/emily_johnson.jpg" alt="User 3" />
-				<h3>Emily Johnson</h3>
-				<p>
-					"The platform is user-friendly and secure. I felt
-					confident that my data was protected. Great service!"
-				</p>
-			</div>
-		</div>
-	</section>
-
-	
-	<button class="scroll-to-top" id="scrollToTopBtn">
-		<i class="fas fa-chevron-up"></i>
-	</button>
-
-
-	<footer class="footer">
-		<div class="footer-content">
-			<div class="footer-section">
-				<h3>About Us</h3>
-				<ul>
-					<li><a href="#">Our Story</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Careers</a></li>
-				</ul>
-			</div>
-			<div class="footer-section">
-				<h3>Services</h3>
-				<ul>
-					<li><a href="#">Resume Builder</a></li>
-					<li><a href="#">CV Templates</a></li>
-					<li><a href="#">Career Advice</a></li>
-				</ul>
-			</div>
-			<div class="footer-section">
-				<h3>Support</h3>
-				<ul>
-					<li><a href="/Faqs.html">FAQ</a></li>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Privacy Policy</a></li>
-				</ul>
-			</div>
-			<div class="footer-section">
-				<h3>Connect With Us</h3>
-				<div class="social-icons">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</div>
-				<div class = "web-views">
-					<img src="https://hits.sh/garimasingh0109.github.io/Resum-Resume.svg?label=Website%20Views&extraCount=1627&color=black&labelColor=9f9f9f" style="height: 20px;width: 150px;margin-top: 10px;" alt="web views">
-				</div>
-			</div>
-		</div>
-		<div class="footer-bottom">
-			<p>&copy; 2024 Resume Builder. All rights reserved.</p>
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-	<script>
-		// Scroll to Top Button Functionality
-		const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-
-		window.onscroll = function () {
-			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-				scrollToTopBtn.style.display = 'flex'; // Show button
-			} else {
-				scrollToTopBtn.style.display = 'none'; // Hide button
-			}
-		};
-
-		scrollToTopBtn.onclick = function () {
-			window.scrollTo({ top: 0, behavior: 'smooth' }); // Smooth scroll to top
-		};
-
-
-	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
-
-	</script>
-	
-	<script>
-			var typed = new Typed("#newlogo", {
-			strings: ["EnhanCV.", "Build and shine!"],
-			loop: true,
-			typeSpeed: 80,
-			backSpeed: 25, // Speed for backspacing
-			backDelay: 1000, // Delay before starting to backspace
-			startDelay: 500, // Optional: Delay before starting the typing effect
-			});
-	</script>
-
-
-</body>
-
-</html>
